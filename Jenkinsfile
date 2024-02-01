@@ -9,7 +9,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'docker build -t redmanpro8/mywebapp-k8:latest'
+        sh 'docker build -t redmanpro8/mywebapp-k8:latest .'
       }
     }
     stage('Login') {
