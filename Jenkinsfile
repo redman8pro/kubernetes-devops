@@ -25,7 +25,7 @@ pipeline {
     stage('Deploy') {
             steps {
               script {
-                   sh "kubectl apply - nginx-deployment.yaml"
+                   sh "kubectl apply -f nginx-deployment.yaml"
                 }
               }
             }
